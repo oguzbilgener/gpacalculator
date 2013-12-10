@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DD9535D41855C83D009D5E51"
-               BuildableName = "GPACalcMed.app"
-               BlueprintName = "GPACalcMed"
-               ReferencedContainer = "container:GPACalcMed.xcodeproj">
+               BuildableName = "GPA Calculator.app"
+               BlueprintName = "GPA Calculator"
+               ReferencedContainer = "container:GPA Calculator.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DD9535F51855C83D009D5E51"
-               BuildableName = "GPACalcMedTests.xctest"
-               BlueprintName = "GPACalcMedTests"
-               ReferencedContainer = "container:GPACalcMed.xcodeproj">
+               BuildableName = "GPA CalculatorTests.xctest"
+               BlueprintName = "GPA CalculatorTests"
+               ReferencedContainer = "container:GPA Calculator.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DD9535D41855C83D009D5E51"
-            BuildableName = "GPACalcMed.app"
-            BlueprintName = "GPACalcMed"
-            ReferencedContainer = "container:GPACalcMed.xcodeproj">
+            BuildableName = "GPA Calculator.app"
+            BlueprintName = "GPA Calculator"
+            ReferencedContainer = "container:GPA Calculator.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DD9535D41855C83D009D5E51"
-            BuildableName = "GPACalcMed.app"
-            BlueprintName = "GPACalcMed"
-            ReferencedContainer = "container:GPACalcMed.xcodeproj">
+            BuildableName = "GPA Calculator.app"
+            BlueprintName = "GPA Calculator"
+            ReferencedContainer = "container:GPA Calculator.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -80,9 +80,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DD9535D41855C83D009D5E51"
-            BuildableName = "GPACalcMed.app"
-            BlueprintName = "GPACalcMed"
-            ReferencedContainer = "container:GPACalcMed.xcodeproj">
+            BuildableName = "GPA Calculator.app"
+            BlueprintName = "GPA Calculator"
+            ReferencedContainer = "container:GPA Calculator.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

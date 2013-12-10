@@ -18,6 +18,8 @@
 		DD9535F91855C83D009D5E51 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD9535D81855C83D009D5E51 /* Cocoa.framework */; };
 		DD9536011855C83D009D5E51 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD9535FF1855C83D009D5E51 /* InfoPlist.strings */; };
 		DD9536031855C83D009D5E51 /* GPACalcMedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9536021855C83D009D5E51 /* GPACalcMedTests.m */; };
+		DD9536121855EE0B009D5E51 /* O_Course.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9536111855EE0B009D5E51 /* O_Course.m */; };
+		DD9536131855EE0B009D5E51 /* O_Course.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9536111855EE0B009D5E51 /* O_Course.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,25 +33,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DD9535D51855C83D009D5E51 /* GPACalcMed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPACalcMed.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD9535D51855C83D009D5E51 /* GPA Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GPA Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD9535D81855C83D009D5E51 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		DD9535DB1855C83D009D5E51 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		DD9535DC1855C83D009D5E51 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		DD9535DD1855C83D009D5E51 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		DD9535E01855C83D009D5E51 /* GPACalcMed-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GPACalcMed-Info.plist"; sourceTree = "<group>"; };
+		DD9535E01855C83D009D5E51 /* GPA Calculator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GPA Calculator-Info.plist"; sourceTree = "<group>"; };
 		DD9535E21855C83D009D5E51 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DD9535E41855C83D009D5E51 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DD9535E61855C83D009D5E51 /* GPACalcMed-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GPACalcMed-Prefix.pch"; sourceTree = "<group>"; };
+		DD9535E61855C83D009D5E51 /* GPA Calculator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GPA Calculator-Prefix.pch"; sourceTree = "<group>"; };
 		DD9535E81855C83D009D5E51 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		DD9535EA1855C83D009D5E51 /* O_AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = O_AppDelegate.h; sourceTree = "<group>"; };
 		DD9535EB1855C83D009D5E51 /* O_AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = O_AppDelegate.m; sourceTree = "<group>"; };
 		DD9535EE1855C83D009D5E51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		DD9535F01855C83D009D5E51 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		DD9535F61855C83D009D5E51 /* GPACalcMedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GPACalcMedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD9535F61855C83D009D5E51 /* GPA CalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GPA CalculatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD9535F71855C83D009D5E51 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		DD9535FE1855C83D009D5E51 /* GPACalcMedTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GPACalcMedTests-Info.plist"; sourceTree = "<group>"; };
+		DD9535FE1855C83D009D5E51 /* GPA CalculatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GPA CalculatorTests-Info.plist"; sourceTree = "<group>"; };
 		DD9536001855C83D009D5E51 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DD9536021855C83D009D5E51 /* GPACalcMedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPACalcMedTests.m; sourceTree = "<group>"; };
+		DD9536101855EE0B009D5E51 /* O_Course.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = O_Course.h; sourceTree = "<group>"; };
+		DD9536111855EE0B009D5E51 /* O_Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = O_Course.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,8 +90,8 @@
 		DD9535D61855C83D009D5E51 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DD9535D51855C83D009D5E51 /* GPACalcMed.app */,
-				DD9535F61855C83D009D5E51 /* GPACalcMedTests.xctest */,
+				DD9535D51855C83D009D5E51 /* GPA Calculator.app */,
+				DD9535F61855C83D009D5E51 /* GPA CalculatorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,6 +122,8 @@
 				DD9535EA1855C83D009D5E51 /* O_AppDelegate.h */,
 				DD9535EB1855C83D009D5E51 /* O_AppDelegate.m */,
 				DD9535ED1855C83D009D5E51 /* MainMenu.xib */,
+				DD9536101855EE0B009D5E51 /* O_Course.h */,
+				DD9536111855EE0B009D5E51 /* O_Course.m */,
 				DD9535F01855C83D009D5E51 /* Images.xcassets */,
 				DD9535DF1855C83D009D5E51 /* Supporting Files */,
 			);
@@ -127,10 +133,10 @@
 		DD9535DF1855C83D009D5E51 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				DD9535E01855C83D009D5E51 /* GPACalcMed-Info.plist */,
+				DD9535E01855C83D009D5E51 /* GPA Calculator-Info.plist */,
 				DD9535E11855C83D009D5E51 /* InfoPlist.strings */,
 				DD9535E41855C83D009D5E51 /* main.m */,
-				DD9535E61855C83D009D5E51 /* GPACalcMed-Prefix.pch */,
+				DD9535E61855C83D009D5E51 /* GPA Calculator-Prefix.pch */,
 				DD9535E71855C83D009D5E51 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
@@ -148,7 +154,7 @@
 		DD9535FD1855C83D009D5E51 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				DD9535FE1855C83D009D5E51 /* GPACalcMedTests-Info.plist */,
+				DD9535FE1855C83D009D5E51 /* GPA CalculatorTests-Info.plist */,
 				DD9535FF1855C83D009D5E51 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -157,9 +163,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DD9535D41855C83D009D5E51 /* GPACalcMed */ = {
+		DD9535D41855C83D009D5E51 /* GPA Calculator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DD9536061855C83D009D5E51 /* Build configuration list for PBXNativeTarget "GPACalcMed" */;
+			buildConfigurationList = DD9536061855C83D009D5E51 /* Build configuration list for PBXNativeTarget "GPA Calculator" */;
 			buildPhases = (
 				DD9535D11855C83D009D5E51 /* Sources */,
 				DD9535D21855C83D009D5E51 /* Frameworks */,
@@ -169,14 +175,14 @@
 			);
 			dependencies = (
 			);
-			name = GPACalcMed;
+			name = "GPA Calculator";
 			productName = GPACalcMed;
-			productReference = DD9535D51855C83D009D5E51 /* GPACalcMed.app */;
+			productReference = DD9535D51855C83D009D5E51 /* GPA Calculator.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DD9535F51855C83D009D5E51 /* GPACalcMedTests */ = {
+		DD9535F51855C83D009D5E51 /* GPA CalculatorTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DD9536091855C83D009D5E51 /* Build configuration list for PBXNativeTarget "GPACalcMedTests" */;
+			buildConfigurationList = DD9536091855C83D009D5E51 /* Build configuration list for PBXNativeTarget "GPA CalculatorTests" */;
 			buildPhases = (
 				DD9535F21855C83D009D5E51 /* Sources */,
 				DD9535F31855C83D009D5E51 /* Frameworks */,
@@ -187,9 +193,9 @@
 			dependencies = (
 				DD9535FB1855C83D009D5E51 /* PBXTargetDependency */,
 			);
-			name = GPACalcMedTests;
+			name = "GPA CalculatorTests";
 			productName = GPACalcMedTests;
-			productReference = DD9535F61855C83D009D5E51 /* GPACalcMedTests.xctest */;
+			productReference = DD9535F61855C83D009D5E51 /* GPA CalculatorTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -207,7 +213,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DD9535D01855C83D009D5E51 /* Build configuration list for PBXProject "GPACalcMed" */;
+			buildConfigurationList = DD9535D01855C83D009D5E51 /* Build configuration list for PBXProject "GPA Calculator" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -220,8 +226,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DD9535D41855C83D009D5E51 /* GPACalcMed */,
-				DD9535F51855C83D009D5E51 /* GPACalcMedTests */,
+				DD9535D41855C83D009D5E51 /* GPA Calculator */,
+				DD9535F51855C83D009D5E51 /* GPA CalculatorTests */,
 			);
 		};
 /* End PBXProject section */
@@ -253,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD9536121855EE0B009D5E51 /* O_Course.m in Sources */,
 				DD9535EC1855C83D009D5E51 /* O_AppDelegate.m in Sources */,
 				DD9535E51855C83D009D5E51 /* main.m in Sources */,
 			);
@@ -263,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD9536031855C83D009D5E51 /* GPACalcMedTests.m in Sources */,
+				DD9536131855EE0B009D5E51 /* O_Course.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +279,7 @@
 /* Begin PBXTargetDependency section */
 		DD9535FB1855C83D009D5E51 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DD9535D41855C83D009D5E51 /* GPACalcMed */;
+			target = DD9535D41855C83D009D5E51 /* GPA Calculator */;
 			targetProxy = DD9535FA1855C83D009D5E51 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -386,9 +394,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GPACalcMed/GPACalcMed-Prefix.pch";
-				INFOPLIST_FILE = "GPACalcMed/GPACalcMed-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "GPACalcMed/GPA Calculator-Prefix.pch";
+				INFOPLIST_FILE = "GPACalcMed/GPA Calculator-Info.plist";
+				PRODUCT_NAME = "GPA Calculator";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -399,9 +407,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GPACalcMed/GPACalcMed-Prefix.pch";
-				INFOPLIST_FILE = "GPACalcMed/GPACalcMed-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "GPACalcMed/GPA Calculator-Prefix.pch";
+				INFOPLIST_FILE = "GPACalcMed/GPA Calculator-Info.plist";
+				PRODUCT_NAME = "GPA Calculator";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -421,8 +429,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "GPACalcMedTests/GPACalcMedTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "GPACalcMedTests/GPA CalculatorTests-Info.plist";
+				PRODUCT_NAME = "GPA CalculatorTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -439,8 +447,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GPACalcMed/GPACalcMed-Prefix.pch";
-				INFOPLIST_FILE = "GPACalcMedTests/GPACalcMedTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "GPACalcMedTests/GPA CalculatorTests-Info.plist";
+				PRODUCT_NAME = "GPA CalculatorTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -449,7 +457,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DD9535D01855C83D009D5E51 /* Build configuration list for PBXProject "GPACalcMed" */ = {
+		DD9535D01855C83D009D5E51 /* Build configuration list for PBXProject "GPA Calculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DD9536041855C83D009D5E51 /* Debug */,
@@ -458,21 +466,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DD9536061855C83D009D5E51 /* Build configuration list for PBXNativeTarget "GPACalcMed" */ = {
+		DD9536061855C83D009D5E51 /* Build configuration list for PBXNativeTarget "GPA Calculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DD9536071855C83D009D5E51 /* Debug */,
 				DD9536081855C83D009D5E51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		DD9536091855C83D009D5E51 /* Build configuration list for PBXNativeTarget "GPACalcMedTests" */ = {
+		DD9536091855C83D009D5E51 /* Build configuration list for PBXNativeTarget "GPA CalculatorTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DD95360A1855C83D009D5E51 /* Debug */,
 				DD95360B1855C83D009D5E51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
