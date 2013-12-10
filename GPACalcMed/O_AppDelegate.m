@@ -149,6 +149,8 @@
 			return -1;
 		if( [course courseName] == nil || [[course courseName] isEqualToString:@""])
 			return -1;
+		if( [course credits]==-1)
+			return -1;
 		
 		credits += [course credits];
 		
