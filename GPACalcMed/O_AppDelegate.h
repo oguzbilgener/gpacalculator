@@ -24,8 +24,9 @@
 - (IBAction)creditsAction:(id)sender;
 
 + (NSString*) gradeText:(float)grade;
-+ (float)calculateGrades:(NSMutableArray *)courses;
-- (void)displayGrades;
-
++ (float) calculateGrades:(NSMutableArray *)courses;
+- (void) displayGrades;
+- (void) storeGrades;
+- (NSString*) getStoragePath:(NSString*)file;
 
 @end

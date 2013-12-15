@@ -21,16 +21,20 @@
 	return self;
 }
 
-/*- (id)initWithName:(NSString*)name withCredits:(int)credits withLetter:(NSString*)letter {
-	if (nil != (self = [super init]))
-	{
-		[self setName:name];
-		[self setCredits:credits];
-		[self setLetter:letter];
-		[self calculateGrade];
+- (id)initWithCoder:(NSCoder *)decoder {
+	if (self = [super init]) {
+		[self setCourseName:[decoder decodeObjectForKey:@"courseName"]];
+		[self setCredits:(NSInteger)[decoder decodeObjectForKey:@"credits"]];
+		[self setLetter:[decoder decodeObjectForKey:@"letter"]];
 	}
 	return self;
-}*/
+}
+
+- (void)encodeWithCoder:(NSCoder *)encoder {
+	[encoder encodeObject:_courseName forKey:@"courseName"];
+	[encoder encodeInteger: _credits forKey:@"credits"];
+	[encoder encodeObject:_letter forKey:@"letter"];
+}
 
 + (float) gradeValue:(NSString *)letter
 {

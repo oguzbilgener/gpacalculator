@@ -12,6 +12,9 @@
 @implementation O_AppDelegate
 {
 	NSMutableArray* _courses;
+	NSString* coursesFile;
+	NSString* creditsFile;
+	NSString* lettersFile;
 }
 
 - (void) awakeFromNib
@@ -22,10 +25,33 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
 	_courses = [[NSMutableArray alloc] init];
+	coursesFile = @"courses.txt";
+	creditsFile = @"credits.txt";
+	lettersFile = @"letters.txt";
+	// retrieves stored values
+	NSArray *savedCourses = [NSArray arrayWithContentsOfFile:[self getStoragePath:coursesFile]];
+	NSArray *savedCredits = [NSArray arrayWithContentsOfFile:[self getStoragePath:creditsFile]];
+	NSArray *savedLetters = [NSArray arrayWithContentsOfFile:[self getStoragePath:lettersFile]];
 	
-	O_Course *mCourse = [[O_Course alloc] init];
-	[_courses addObject:mCourse];
+	for( int i=0; i < [savedCourses count]; i++)
+	{
+		O_Course *savedCourse = [[O_Course alloc] init];
+		[savedCourse setCourseName:[savedCourses objectAtIndex:i]];
+		[savedCourse setCredits: [(NSNumber*)[savedCredits objectAtIndex:i] integerValue]];
+		[savedCourse setLetter:[savedLetters objectAtIndex:i]];
+		[savedCourse calculateGrade];
+		[_courses addObject:savedCourse];
+	}
 	
+	if([_courses count] == 0)
+	{
+		O_Course *mCourse = [[O_Course alloc] init];
+		[_courses addObject:mCourse];
+	}
+	else
+	{
+		[self displayGrades];
+	}
 	[_gradesTable reloadData];
 }
 
@@ -42,6 +68,17 @@
 {
 	return YES;
 }
+
+- (void) applicationWillResignActive:(NSNotification *)notification
+{
+	[self storeGrades];
+}
+
+- (void) applicationWillTerminate:(NSNotification *)notification
+{
+	[self storeGrades];
+}
+
 
 - (NSInteger) numberOfRowsInTableView:(NSTableView *)tableView
 {
@@ -139,7 +176,7 @@
 		return @"";
 }
 
-+(float)calculateGrades:(NSMutableArray *)courses
++ (float)calculateGrades:(NSMutableArray *)courses
 {
 	float sum = 0;
 	NSInteger credits = 0;
@@ -153,7 +190,6 @@
 			return -1;
 		
 		credits += [course credits];
-		
 		sum += [course credits] * [course grade];
 	}
 	if(credits == 0)
@@ -162,7 +198,7 @@
 	return (float)(sum/credits);
 }
 
--(void)displayGrades;
+- (void)displayGrades;
 {
 	
 	float gpa = [O_AppDelegate calculateGrades:_courses];
@@ -174,6 +210,42 @@
 	{
 		[_resultText setStringValue:@""];
 	}
+}
+
+// stores the course names, credits and letters in seperate files as plists
+// dirty, but works
+- (void) storeGrades
+{
+	// create a cache directory if not exists
+	NSError * error = nil;
+	[[NSFileManager defaultManager] createDirectoryAtPath:[self getStoragePath:@""]
+							  withIntermediateDirectories:YES
+											   attributes:nil
+													error:&error];
+	if (error != nil)
+	{
+		NSLog(@"error creating directory: %@", error);
+	}
+	else
+	{
+		NSMutableArray *courseNamesArray = [[NSMutableArray alloc] init];
+		NSMutableArray *creditsArray = [[NSMutableArray alloc] init];
+		NSMutableArray *lettersArray = [[NSMutableArray alloc] init];
+		for( int i =0; i < [_courses count]; i++)
+		{
+			[courseNamesArray addObject:[[_courses objectAtIndex:i] courseName]];
+			[creditsArray addObject: [NSNumber numberWithInteger: [[_courses objectAtIndex:i] credits]]];
+			[lettersArray addObject:[[_courses objectAtIndex:i] letter]];
+		}
+		[courseNamesArray writeToFile:[self getStoragePath:coursesFile] atomically:NO];
+		[creditsArray writeToFile:[self getStoragePath:creditsFile] atomically:NO];
+		[lettersArray writeToFile:[self getStoragePath:lettersFile] atomically:NO];
+	}
+}
+
+- (NSString*) getStoragePath:(NSString*)file
+{
+	return [NSString stringWithFormat: @"%@%@%@%@%@", [@"~/Library/Caches" stringByExpandingTildeInPath], @"/", [[NSBundle mainBundle] bundleIdentifier], @"/", file ];
 }
 
 @end
