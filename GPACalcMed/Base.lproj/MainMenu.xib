@@ -649,8 +649,7 @@
         <window title="GPA Calculator" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" appearanceType="lightContent" animationBehavior="default" id="371">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowCollectionBehavior key="collectionBehavior" fullScreenPrimary="YES"/>
-            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="542" height="286"/>
+            <rect key="contentRect" x="486" y="278" width="542" height="286"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
             <value key="minSize" type="size" width="540" height="282"/>
             <view key="contentView" id="372">
@@ -683,7 +682,7 @@
                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
-                                            <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                            <tableColumnResizingMask key="resizingMask" resizeWithTable="YES"/>
                                         </tableColumn>
                                         <tableColumn identifier="CreditsColumn" width="118" minWidth="10" maxWidth="3.4028234663852886e+38" id="2pZ-gP-ECQ">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Credits">
@@ -699,7 +698,6 @@
                                                     <action selector="creditsAction:" target="494" id="GUg-dZ-WlS"/>
                                                 </connections>
                                             </textFieldCell>
-                                            <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                         </tableColumn>
                                         <tableColumn identifier="LetterColumn" width="118" minWidth="10" maxWidth="3.4028234663852886e+38" id="uPw-X7-To4">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Letter Grade">
@@ -728,7 +726,6 @@
                                                     <action selector="comboAction:" target="494" id="FuK-C4-cm1"/>
                                                 </connections>
                                             </comboBoxCell>
-                                            <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                         </tableColumn>
                                     </tableColumns>
                                     <connections>
@@ -743,7 +740,7 @@
                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="521" id="jes-Qc-xsy"/>
                         </constraints>
                         <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="Lbv-gW-rGa">
-                            <rect key="frame" x="1" y="1" width="0.0" height="16"/>
+                            <rect key="frame" x="1" y="220" width="521" height="16"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
                         <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="hvV-Xd-2z4">
@@ -755,7 +752,7 @@
                             <autoresizingMask key="autoresizingMask"/>
                         </tableHeaderView>
                     </scrollView>
-                    <box autoresizesSubviews="NO" ambiguous="YES" misplaced="YES" title="Box" borderType="none" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="d4a-xB-A3N">
+                    <box autoresizesSubviews="NO" title="Box" borderType="none" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="d4a-xB-A3N">
                         <rect key="frame" x="7" y="-1" width="76" height="39"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <view key="contentView">
@@ -804,6 +801,8 @@
                     <constraint firstItem="d4a-xB-A3N" firstAttribute="leading" secondItem="372" secondAttribute="leading" constant="10" id="PHN-7e-fNA"/>
                     <constraint firstItem="gt1-P0-aLM" firstAttribute="top" secondItem="372" secondAttribute="top" constant="9" id="PLm-D7-D2d"/>
                     <constraint firstItem="gt1-P0-aLM" firstAttribute="leading" secondItem="372" secondAttribute="leading" constant="10" id="Tit-6I-Mia"/>
+                    <constraint firstAttribute="trailing" secondItem="d4a-xB-A3N" secondAttribute="trailing" constant="462" id="Z5a-fE-nRq"/>
+                    <constraint firstItem="d4a-xB-A3N" firstAttribute="top" secondItem="gt1-P0-aLM" secondAttribute="bottom" constant="4" id="fIv-q6-Iw0"/>
                     <constraint firstAttribute="trailing" secondItem="Xkd-zX-Uqd" secondAttribute="trailing" constant="11" id="hBd-bT-WCU"/>
                     <constraint firstAttribute="bottom" secondItem="gt1-P0-aLM" secondAttribute="bottom" constant="40" id="lWp-lp-H3b"/>
                     <constraint firstAttribute="trailing" secondItem="gt1-P0-aLM" secondAttribute="trailing" constant="9" id="tsV-zA-Peh"/>
@@ -832,5 +831,6 @@
                 <outlet property="contentView" destination="bwm-06-pt0" id="DPJ-BF-UGD"/>
             </connections>
         </drawer>
+        <userDefaultsController representsSharedInstance="YES" id="Rz0-Nq-r70"/>
     </objects>
 </document>
