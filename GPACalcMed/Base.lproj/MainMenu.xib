@@ -664,12 +664,13 @@
                             <rect key="frame" x="1" y="17" width="521" height="219"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
-                                <tableView identifier="CoursesTable" verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" headerView="naX-dZ-pkb" id="yoN-Ug-iHE">
+                                <tableView identifier="CoursesTable" verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" multipleSelection="NO" autosaveColumns="NO" headerView="naX-dZ-pkb" id="yoN-Ug-iHE">
                                     <rect key="frame" x="0.0" y="0.0" width="521" height="219"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <size key="intercellSpacing" width="3" height="2"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                                    <tableViewGridLines key="gridStyleMask" vertical="YES"/>
+                                    <color key="gridColor" red="0.88586956521739135" green="0.88586956521739135" blue="0.88586956521739135" alpha="1" colorSpace="calibratedRGB"/>
                                     <tableColumns>
                                         <tableColumn identifier="NameColumn" width="276" minWidth="10" maxWidth="3.4028234663852886e+38" id="Ljz-kf-98M">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Courses">
